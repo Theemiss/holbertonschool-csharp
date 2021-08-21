@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>5-enemy</name>
+    </assembly>
+    <members>
+        <member name="T:Enemies.Zombie">
+            <summary>
+            empty zombie class
+            </summary>
+        </member>
+        <member name="F:Enemies.Zombie.health">
+            <summary>  repersent the health of zombie </summary>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:Enemies.Zombie"/> class.</summary>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor(System.Int32)">
+            <summary>
+             Setter for health
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:Enemies.Zombie.Name">
+            <summary>
+            Set or get the name
+            </summary>
+        </member>
+        <member name="M:Enemies.Zombie.GetHealth">
+            <summary>
+            Return current health of the zombie 
+            </summary>
+            <returns> health</returns>
+        </member>
+        <member name="M:Enemies.Zombie.ToString">
+            <summary>
+            overide to string method
+            </summary>
+            <returns> String representaion of an object</returns>
+        </member>
+    </members>
+</doc>
