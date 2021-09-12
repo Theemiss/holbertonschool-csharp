@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\6-vector_addition",
-    "\\9-vector_scalar_mul"
+    "\\16-matrix_scalar_mul",
+    "\\3-magnitude"
   ],
-  "SelectedNode": "\\9-vector_scalar_mul\\9-vector_scalar_mul.cs",
+  "SelectedNode": "\\3-magnitude\\3-magnitude.csproj",
   "PreviewInSolutionExplorer": false
 }
