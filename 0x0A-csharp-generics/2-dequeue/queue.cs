@@ -37,7 +37,7 @@ class Queue<T>
     /// <returns>the default value of the parametre type or the value of node removed</returns>
     public T Dequeue()
     {
-        if(head == null)
+        if (head == null)
         {
             Console.WriteLine("Queue is empty");
             return (default(T));
