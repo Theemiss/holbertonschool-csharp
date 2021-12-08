@@ -107,44 +107,43 @@ public class Decoration : Base, IInteractive, IBreakable
         this.name = name;
         this.durability = durability;
         this.isQuestItem = isQuestItem;
-
     }
-
-        /// <summary>
-        /// interact method
-        /// </summary>
-        public void Interact()
-        {
-            if (this.durability == 0)
-            {
-                Console.WriteLine($"The {this.name} has been broken.");
-            }
-            else if (this.isQuestItem == true)
-            {
-                Console.WriteLine($"You look at the {this.name}. There's a key inside.");
-            }
-            if (this.isQuestItem == false)
-            {
-                Console.WriteLine($"You look at the {this.name}. Not much to see here.");
-            }
-        }
     /// <summary>
-    /// break method
+    /// Used for interactions
     /// </summary>
-        public void Break()
+    public void Interact()
+    {
+        if (durability <= 0)
         {
-            this.durability -= 1;
-            if (this.durability > 0)
-            {
-                Console.WriteLine($"You hit the {this.name}. It cracks.");
-            }
-            else if (this.durability == 0)
-            {
-                Console.WriteLine($"You smash the {this.name}. What a mess.");
-            }
-            else 
-            {
-                Console.WriteLine($"The {this.name} is already broken.");
-            }
+            Console.WriteLine($"The {name} has been broken.");
+        }
+        else if (isQuestItem)
+        {
+            Console.WriteLine($"You look at the {name}. There's a key inside.");
+        }
+        else
+        {
+            Console.WriteLine($"You look at the {name}. Not much to see here.");
         }
     }
+    /// <summary>
+    /// Used for broken item.
+    /// </summary>
+    public void Break()
+    {
+        durability -= 1;
+        if (durability > 0)
+        {
+            Console.WriteLine($"You hit the {name}. It cracks.");
+        }
+        else if (durability == 0)
+        {
+            Console.WriteLine($"You smash the {name}. What a mess.");
+        }
+        else
+        {
+            Console.WriteLine($"The {name} is already broken.");
+        }
+    }
+
+}
