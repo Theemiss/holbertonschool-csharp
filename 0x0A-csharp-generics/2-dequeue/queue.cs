@@ -23,11 +23,11 @@ class Queue<T>
         {
             head = n;
             tail = n;
-            head.next = null;
         }
         else
         {
             tail.next = n;
+            tail = n;
         }
         this.count += 1;
     }
