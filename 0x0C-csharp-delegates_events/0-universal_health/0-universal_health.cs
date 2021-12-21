@@ -31,7 +31,7 @@ public Player(string name="Player", float maxHp=100f)
 /// </summary>
     public void PrintHealth()
 {
-        Console.WriteLine("{0} has {1}/ {2} health",name,hp.ToString(),maxHp.ToString());
+        Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
 }
 
 }
