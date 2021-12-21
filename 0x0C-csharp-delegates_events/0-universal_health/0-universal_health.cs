@@ -4,9 +4,9 @@ using System;
 /// </summary>
 public class Player
 {
-    String name;
-    float maxHp;
-    float hp;
+    private String name;
+    private float maxHp;
+    private float hp;
     /// <summary>
     /// constructor for the player class
     /// </summary>
